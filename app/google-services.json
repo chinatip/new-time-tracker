@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "925089702000",
+    "firebase_url": "https://new-tracker.firebaseio.com",
+    "project_id": "new-tracker",
+    "storage_bucket": "new-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925089702000:android:408ab42c83140a0c",
+        "android_client_info": {
+          "package_name": "com.example.chinatip.timetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925089702000-gblclf41pd0o52rreuu05atvhjj026vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chinatip.timetracker",
+            "certificate_hash": "76bbdf8644a7ae3924013df0734e494ae8ebd17c"
+          }
+        },
+        {
+          "client_id": "925089702000-21hdbjjqf9unc1gb6tb9pl4u15or83ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc9HO7Qdvft3Kndu9GUUlBREpXG9hpoK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925089702000-21hdbjjqf9unc1gb6tb9pl4u15or83ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

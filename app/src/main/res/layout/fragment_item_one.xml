@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.chinatip.timetracker.ItemOneFragment">
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="25dp"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toggle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+        android:text="Status : "
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/entertain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Entertainment"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entertain"
+        android:layout_alignStart="@+id/entertain"
+        android:layout_below="@+id/entertain"
+        android:layout_marginTop="27dp"
+        android:text="Studying" />
+
+    <Button
+        android:id="@+id/coding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/study"
+        android:layout_alignRight="@+id/study"
+        android:layout_below="@+id/study"
+        android:layout_marginTop="27dp"
+        android:text="Coding" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Off"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/toggle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/toggle"
+        android:layout_marginBottom="15dp"
+        android:text="Sign out" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signout"
+        android:layout_alignEnd="@+id/signout"
+        android:layout_alignLeft="@+id/signout"
+        android:layout_alignRight="@+id/signout"
+        android:layout_alignStart="@+id/signout"
+        android:layout_marginBottom="14dp"
+        android:text="m@mail.com"
+        android:textAlignment="textEnd" />
+</RelativeLayout>

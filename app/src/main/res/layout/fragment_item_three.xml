@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.chinatip.timetracker.ItemThreeFragment">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Goal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/goal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Entertainment"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/date"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toStartOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/goal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Studying"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/goal1"
+        android:layout_alignLeft="@+id/goal1"
+        android:layout_alignStart="@+id/goal1" />
+
+    <TextView
+        android:id="@+id/goal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coding"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/studyingP"
+        android:layout_alignLeft="@+id/goal2"
+        android:layout_alignStart="@+id/goal2"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/studyingP"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal2"
+        android:layout_alignBottom="@+id/goal2"
+        android:layout_alignLeft="@+id/entertainmentP"
+        android:layout_alignStart="@+id/entertainmentP"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="0-100%"
+        android:inputType="number"
+        tools:layout_width="50dp" />
+
+    <EditText
+        android:id="@+id/entertainmentP"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal1"
+        android:layout_alignBottom="@+id/goal1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/date"
+        android:layout_toRightOf="@+id/date"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="0-100%"
+        android:inputType="number"
+        tools:layout_width="50dp" />
+
+    <EditText
+        android:id="@+id/codinP"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal3"
+        android:layout_alignBottom="@+id/goal3"
+        android:layout_alignLeft="@+id/studyingP"
+        android:layout_alignStart="@+id/studyingP"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="0-100%"
+        android:inputType="number"
+        tools:layout_width="50dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textView17"
+        android:text="%"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/goal2"
+        android:layout_alignBottom="@+id/studyingP"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_alignBottom="@+id/codinP"
+        android:layout_alignTop="@+id/goal3"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/goal1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/entertainmentP"
+        android:layout_toRightOf="@+id/entertainmentP"
+        android:text="%"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:text=">20 for less than 20 percent"
+        android:layout_below="@+id/codinP"
+        android:layout_alignLeft="@+id/goal3"
+        android:layout_alignStart="@+id/goal3" />
+
+    <Button
+        android:id="@+id/saveGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="51dp"
+        android:layout_toLeftOf="@+id/codinP"
+        android:layout_toStartOf="@+id/codinP"
+        android:text="save" />
+
+</RelativeLayout>
